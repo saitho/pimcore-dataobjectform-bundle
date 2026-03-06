@@ -1,0 +1,11 @@
+services:
+    _defaults:
+        # automatically injects dependencies in your services
+        autowire: true
+        # automatically registers your services as commands, event subscribers, etc.
+        autoconfigure: true
+        # cannot fetch services directly from the container via $container->get()
+        public: false
+
+    Saitho\DataObjectFormBundle\:
+        resource: '../'

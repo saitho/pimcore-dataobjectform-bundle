@@ -1,0 +1,3 @@
+twig:
+    form_themes:
+        - '@DataObjectForm/form/custom_types.html.twig'

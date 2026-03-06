@@ -1,0 +1,17 @@
+{
+  "name": "saitho/pimcore-dataobjectform-bundle",
+  "require": {
+    "pimcore/pimcore": "^11.5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Saitho\\DataObjectFormBundle\\": "src"
+    }
+  },
+  "scripts": {
+    "phpunit": "phpunit",
+    "phpstan": "phpstan",
+    "phpcs": "phpcs",
+    "phpcbf": "phpcbf"
+  }
+}

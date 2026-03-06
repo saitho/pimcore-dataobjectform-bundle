@@ -1,0 +1,26 @@
+{% block object_relation_row %}
+<table class="table">
+    <thead>
+    <tr>
+        {% for field in form.vars.relation_visible_fields %}
+        <th>{{ field }}</th>
+        {% endfor %}
+        {% for column in form.vars.relation_columns %}
+        <th>{{ column.label }}</th>
+        {% endfor %}
+    </tr>
+    </thead>
+    <tbody>
+    {% for child in form.children|filter(child => not child.rendered) %}
+    <tr id="obj-{{ child.vars.relation_object.object.id }}">
+        {% for field in form.vars.relation_visible_fields %}
+        <td>{{ child.vars.relation_object.object.get(field) }}</td>
+        {% endfor %}
+        {% for subchild in child.children|filter(child => not child.rendered) %}
+        <td>{{ form_widget(subchild, { 'label': false }) }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
