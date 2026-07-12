@@ -21,7 +21,7 @@ class ObjectRelationDataTransformer implements DataTransformerInterface
     /**
      * @param mixed $value
      */
-    public function transform(mixed $value)
+    public function transform(mixed $value): mixed
     {
         $event = new GenericEvent();
         $event->setArgument('data', $this->fullObject->getData());
@@ -33,7 +33,7 @@ class ObjectRelationDataTransformer implements DataTransformerInterface
         return $updatedData;
     }
 
-    public function reverseTransform(mixed $value)
+    public function reverseTransform(mixed $value): mixed
     {
         $event = new GenericEvent();
         $event->setArgument('data', $value);

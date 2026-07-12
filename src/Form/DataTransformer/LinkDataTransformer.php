@@ -11,7 +11,7 @@ class LinkDataTransformer implements DataTransformerInterface
 {
     protected Link $link;
 
-    public function transform(mixed $value)
+    public function transform(mixed $value): mixed
     {
         /** @var Link $value  */
         if ($value === null) {
@@ -21,7 +21,7 @@ class LinkDataTransformer implements DataTransformerInterface
         return $value->getPath();
     }
 
-    public function reverseTransform(mixed $value)
+    public function reverseTransform(mixed $value): mixed
     {
         if (!isset($this->link)) {
             $this->link = new Link();

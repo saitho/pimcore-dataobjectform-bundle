@@ -48,7 +48,7 @@ class FileDataTransformer implements DataTransformerInterface
         };
     }
 
-    public function transform(mixed $value)
+    public function transform(mixed $value): mixed
     {
         if ($value instanceof Asset) {
             $this->asset = $value;
@@ -61,7 +61,7 @@ class FileDataTransformer implements DataTransformerInterface
         return null;
     }
 
-    public function reverseTransform(mixed $value)
+    public function reverseTransform(mixed $value): mixed
     {
         /** @var UploadedFile|null $value */
         if ($value === null) {

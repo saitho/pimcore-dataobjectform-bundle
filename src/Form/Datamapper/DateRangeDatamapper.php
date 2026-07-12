@@ -9,7 +9,7 @@ use Symfony\Component\Form\Form;
 
 class DateRangeDatamapper implements DataMapperInterface
 {
-    public function mapDataToForms(mixed $viewData, \Traversable $forms)
+    public function mapDataToForms(mixed $viewData, \Traversable $forms): void
     {
         if (null === $viewData) {
             return;
@@ -32,7 +32,7 @@ class DateRangeDatamapper implements DataMapperInterface
         }
     }
 
-    public function mapFormsToData(\Traversable $forms, mixed &$viewData)
+    public function mapFormsToData(\Traversable $forms, mixed &$viewData): void
     {
         if (null === $viewData) {
             return;
