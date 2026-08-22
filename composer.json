@@ -1,7 +1,8 @@
 {
   "name": "saitho/pimcore-dataobjectform-bundle",
   "require": {
-    "open-dxp/opendxp": "^1.0.0"
+    "open-dxp/opendxp": "^1.0.0",
+    "symfony/form": "^7.4"
   },
   "autoload": {
     "psr-4": {
