@@ -164,7 +164,7 @@ trait MapDataClassValuesToFormTrait
         $event->setArgument('options', $finalOptions);
         $event->setArgument('fieldName', $fieldName);
         $event->setArgument('builder', $builder);
-        \Pimcore::getEventDispatcher()->dispatch($event, self::MAP_DATA_EVENT);
+        \OpenDxp::getEventDispatcher()->dispatch($event, self::MAP_DATA_EVENT);
 
         /** @var string $type */
         $type = $event->getArgument('type');

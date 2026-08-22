@@ -21,24 +21,24 @@ class ObjectRelationDataTransformer implements DataTransformerInterface
     /**
      * @param mixed $value
      */
-    public function transform(mixed $value)
+    public function transform(mixed $value): mixed
     {
         $event = new GenericEvent();
         $event->setArgument('data', $this->fullObject->getData());
         $event->setArgument('object', $this->fullObject);
-        \Pimcore::getEventDispatcher()->dispatch($event, self::TRANSFORM_OBJECTRELATION_DATA);
+        \OpenDxp::getEventDispatcher()->dispatch($event, self::TRANSFORM_OBJECTRELATION_DATA);
 
         /** @var array<string, mixed> $updatedData */
         $updatedData = $event->getArgument('data');
         return $updatedData;
     }
 
-    public function reverseTransform(mixed $value)
+    public function reverseTransform(mixed $value): mixed
     {
         $event = new GenericEvent();
         $event->setArgument('data', $value);
         $event->setArgument('object', $this->fullObject);
-        \Pimcore::getEventDispatcher()->dispatch($event, self::REVERSE_TRANSFORM_OBJECTRELATION_DATA);
+        \OpenDxp::getEventDispatcher()->dispatch($event, self::REVERSE_TRANSFORM_OBJECTRELATION_DATA);
 
         /** @var array<int|string, mixed> $data */
         $data = $event->getArgument('data');
