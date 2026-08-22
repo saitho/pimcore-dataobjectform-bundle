@@ -1,7 +1,7 @@
 <?php
 namespace Saitho\DataObjectFormBundle\Form\DataTransformer;
 
-use Pimcore\Model\DataObject\Data\ObjectMetadata;
+use OpenDxp\Model\DataObject\Data\ObjectMetadata;
 use Symfony\Component\EventDispatcher\GenericEvent;
 use Symfony\Component\Form\DataTransformerInterface;
 use Symfony\Component\Form\Exception\UnexpectedTypeException;

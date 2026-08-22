@@ -15,7 +15,7 @@ namespace Saitho\DataObjectFormBundle\Form\Type;
  *  @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-use Pimcore\Model\DataObject\Data\Link;
+use OpenDxp\Model\DataObject\Data\Link;
 use Saitho\DataObjectFormBundle\Form\DataTransformer\LinkDataTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\UrlType;

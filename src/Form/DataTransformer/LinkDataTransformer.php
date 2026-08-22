@@ -2,7 +2,7 @@
 namespace Saitho\DataObjectFormBundle\Form\DataTransformer;
 
 use Symfony\Component\Form\DataTransformerInterface;
-use Pimcore\Model\DataObject\Data\Link;
+use OpenDxp\Model\DataObject\Data\Link;
 
 /**
  * @implements DataTransformerInterface<Link, string>

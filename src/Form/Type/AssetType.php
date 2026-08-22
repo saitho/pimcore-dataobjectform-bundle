@@ -15,7 +15,7 @@ namespace Saitho\DataObjectFormBundle\Form\Type;
  *  @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-use Pimcore\Model\Asset;
+use OpenDxp\Model\Asset;
 use Saitho\DataObjectFormBundle\Form\DataTransformer\FileDataTransformer;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\FormInterface;

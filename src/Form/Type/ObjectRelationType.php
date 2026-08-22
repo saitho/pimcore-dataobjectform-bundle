@@ -15,7 +15,7 @@ namespace Saitho\DataObjectFormBundle\Form\Type;
  *  @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-use Pimcore\Model\DataObject\Data\ObjectMetadata;
+use OpenDxp\Model\DataObject\Data\ObjectMetadata;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\FormInterface;

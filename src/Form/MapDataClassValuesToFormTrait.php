@@ -3,12 +3,12 @@ namespace Saitho\DataObjectFormBundle\Form;
 
 use Carbon\Carbon;
 use Carbon\CarbonPeriod;
-use Pimcore\Model\DataObject\ClassDefinition\Data\AdvancedManyToManyObjectRelation;
-use Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox;
-use Pimcore\Model\DataObject\ClassDefinition\Data\Country;
-use Pimcore\Model\DataObject\ClassDefinition\Data\Countrymultiselect;
-use Pimcore\Model\DataObject\ClassDefinition\Data\Select;
-use Pimcore\Model\DataObject\Concrete;
+use OpenDxp\Model\DataObject\ClassDefinition\Data\AdvancedManyToManyObjectRelation;
+use OpenDxp\Model\DataObject\ClassDefinition\Data\Checkbox;
+use OpenDxp\Model\DataObject\ClassDefinition\Data\Country;
+use OpenDxp\Model\DataObject\ClassDefinition\Data\Countrymultiselect;
+use OpenDxp\Model\DataObject\ClassDefinition\Data\Select;
+use OpenDxp\Model\DataObject\Concrete;
 use Saitho\DataObjectFormBundle\Form\Type\DateRangeType;
 use Saitho\DataObjectFormBundle\Form\Type\AssetType;
 use Saitho\DataObjectFormBundle\Form\Type\LinkType;

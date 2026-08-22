@@ -15,7 +15,7 @@
 
 namespace Saitho\DataObjectFormBundle\Form;
 
-use Pimcore\Model\DataObject\Concrete;
+use OpenDxp\Model\DataObject\Concrete;
 use Symfony\Component\Form\FormInterface;
 
 class ConcreteEditFormHandler

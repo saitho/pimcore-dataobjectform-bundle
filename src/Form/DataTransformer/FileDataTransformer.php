@@ -2,8 +2,8 @@
 namespace Saitho\DataObjectFormBundle\Form\DataTransformer;
 
 use League\Flysystem\FilesystemOperator;
-use Pimcore\Model\Asset;
-use Pimcore\Tool\Storage;
+use OpenDxp\Model\Asset;
+use OpenDxp\Tool\Storage;
 use Symfony\Component\Form\DataTransformerInterface;
 use Symfony\Component\Form\Exception\TransformationFailedException;
 use Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException;

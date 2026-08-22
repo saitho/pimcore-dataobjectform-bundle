@@ -1,8 +1,8 @@
 <?php
 namespace Saitho\DataObjectFormBundle;
 
-use Pimcore\Extension\Bundle\AbstractPimcoreBundle;
+use OpenDxp\Extension\Bundle\AbstractOpenDxpBundle;
 
-class DataObjectFormBundle extends AbstractPimcoreBundle
+class DataObjectFormBundle extends AbstractOpenDxpBundle
 {
 }
