@@ -2,7 +2,7 @@
 
 namespace Saitho\DataObjectFormBundle\Controller;
 
-use Pimcore\Model\DataObject\Concrete;
+use OpenDxp\Model\DataObject\Concrete;
 use Saitho\DataObjectFormBundle\Form\ConcreteEditFormHandler;
 use Symfony\Component\Form\FormError;
 use Symfony\Component\Form\FormInterface;
